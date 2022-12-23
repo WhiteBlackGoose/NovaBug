@@ -13,4 +13,4 @@ jobs:
     - uses: actions/checkout@v2
     - run: |
         cmake .
-        cmake --build .
+        cmake --build . --target ALL_BUILD --config Release
