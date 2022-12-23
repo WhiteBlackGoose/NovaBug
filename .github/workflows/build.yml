@@ -12,5 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: |
+        curl https://www.sfml-dev.org/files/SFML-2.3.1-windows-vc12-64-bit.zip --output sfml.zip
+        unrar sfml.zip
         cmake .
         cmake --build . --target ALL_BUILD --config Release
