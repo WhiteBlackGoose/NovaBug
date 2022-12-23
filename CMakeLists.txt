@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(NovaBug VERSION 1.0.0 LANGUAGES CXX)
 
+set(SFML_DIR "sfml")
+
 # Default to release builds
 if(NOT CMAKE_BUILD_TYPE)
    set(CMAKE_BUILD_TYPE Release)
