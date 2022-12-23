@@ -1,0 +1,16 @@
+name: 'Build'
+
+on:
+  push:
+    branches:
+      - build-artifacts
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+        cmake .
+        cmake build
